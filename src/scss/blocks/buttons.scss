@@ -1,0 +1,7 @@
+.buttons {
+  display: flex;
+
+  &__button:not(:last-child) {
+    margin-right: calc(var(--gap) * 2);
+  }
+}

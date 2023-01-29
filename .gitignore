@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+.husky/
+stories/
+public/
+yarn-error.log
+package-lock.json

@@ -1,0 +1,7 @@
+.some-block {
+  padding: 206px 0;
+
+  @include laptop() {
+    padding: 246px 0;
+  }
+}

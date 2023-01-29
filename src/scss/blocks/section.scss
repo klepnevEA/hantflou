@@ -1,0 +1,7 @@
+.section {
+  position: relative;
+
+  &--title {
+    background-color: var(--bg-color);
+  }
+}

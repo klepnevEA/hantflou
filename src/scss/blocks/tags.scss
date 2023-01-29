@@ -1,0 +1,44 @@
+.tags {
+  display: flex;
+  padding: 0 calc(var(--gap) * 2) calc(var(--gap) * 2) 0;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: calc(var(--gap) * 3);
+    }
+
+    &:after {
+      content: attr(data-text);
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 7px calc(var(--gap) * 3);
+      font-weight: 500;
+      font-size: calc(8px + 9 * (100vw / 1230));
+      line-height: 1.1;
+      border: 2px solid var(--black-color);
+      box-sizing: border-box;
+      border-radius: var(--border-radius);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 8px;
+      left: 8px;
+      background-color: var(--tag-color);
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+    }
+
+    &--select {
+      &:before {
+        background-color: var(--tag-select-color);
+      }
+    }
+  }
+}
