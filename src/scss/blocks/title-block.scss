@@ -39,6 +39,15 @@
     width: 44vw;
     max-width: 611px;
 
+    @include desctop() {
+      right: 0;
+    }
+
+    @include laptop() {
+      top: 10px;
+      transform: translateY(0);
+    }
+
     @include ipad() {
       position: relative;
       right: 0;
